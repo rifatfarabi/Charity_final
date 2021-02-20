@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/registration.css"/>
+    </head>
+    <body>
+        <div class="col-sm-12 cover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 ">
+                        <h1 class="title" style="text-align:center;padding: 20px;">Registration Form</h1>
+                        <form action="show.php" method="POST">
+                            <div class="form-group">
+                                <label for="first_name" class="heading">First Name</label>    
+                                <input type="text" id="first_name" name="first_name" class="form-control">
+                            </div>    
+                            <div class="form-group">
+                                <label for="last_name" class="heading">Last Name</label>    
+                                <input type="text" id="last_name" name="last_name" class="form-control">
+                            </div>   
+                            <div class="form-group">
+                                <label for="email_address" class="heading">Email Address</label>    
+                                <input type="email" id="email_address" name="email_address" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="passowrd" class="heading">Password</label>    
+                                <input type="password" id="passowrd" name="passowrd" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone_number" class="heading">Phone Number</label>    
+                                <input type="number" id="phone_number" name="phone_number" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="heading">Account Type</label>    
+                                <select class="form-control" name="account_type">
+                                    <option>---Select Account Type---</option>
+                                    <option value="Permanent">Permanent</option>
+                                    <option value="Sponsorship">Sponsorship</option>
+                                    <option value="Gift">One time Gift</option>
+                                    <option value="Volunteer">Volunteer</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone_number" class="heading">Date Of Birth</label>    
+                                <input type="date" id="date_of_birth" name="date_of_birth" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="heading">Address</label>    
+                                <textarea name="address" class="form-control" rows="5" style="resize: vertical;"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="heading">Gender</label>    
+                                <div class="radio">
+                                    <label class="radio-title"><input type="radio" name="gender" value="male"> Male </label>
+                                    <label class="radio-title"><input type="radio" name="gender" value="female"> Female </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="heading">District Name</label>    
+                                <select class="form-control" name="district_name">
+                                    <option>---Select District Name---</option>
+                                    <option value="Dhaka">Dhaka</option>
+                                    <option value="Narayangonj">Narayangonj</option>
+                                    <option value="Gazipur">Gazipur</option>
+                                    <option value="Rajshahi">Rajshahi</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="btn" value="Submit" class="btn btn-success btn-block"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="button" name="btn" value="Sign In" class="btn btn-info btn-sm button-sign"/>
+                            </div>
+                        </form>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+
